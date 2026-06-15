@@ -1,0 +1,44 @@
+# this is for a future version, not now, so, yeah
+# its useless rn (using reshaped/slate)
+
+[meta]
+name = "forgr-dark"
+variant = "dark"
+version = "0.1.0"
+
+[colors]
+background = "#1e1e1e"
+panel = "#252526"
+panel_alt = "#2d2d2d"
+sidebar = "#1e1e1e"
+border = "#3c3c3c"
+border_subtle = "#2b2b2b"
+text_primary = "#cccccc"
+text_muted = "#858585"
+text_dimmed = "#5a5a5a"
+accent = "#2979ff"
+accent_hover = "#448aff"
+hover = "#2a2d2e"
+active = "#37373d"
+selected = "#04395e"
+selected_border = "#007fd4"
+danger = "#f44747"
+positive = "#89d185"
+warning = "#e8a838"
+
+[typography]
+font_sans = "'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif"
+font_mono = "'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace"
+font_nerd = "'Symbols Nerd Font', 'NerdFontsSymbols', sans-serif"
+
+[typography.sizes]
+xxs = "0.625rem"
+xs = "0.6875rem"
+sm = "0.75rem"
+base = "0.8125rem"
+lg = "0.875rem"
+xl = "1rem"
+xxl = "1.125rem"
+
+[spacing]
+unit = 4
