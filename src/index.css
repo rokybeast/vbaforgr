@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme {
+    --color-ide-bg: #1e1e1e;
+    --color-ide-panel: #252526;
+    --color-ide-panel-alt: #2d2d2d;
+    --color-ide-sidebar: #1e1e1e;
+    --color-ide-border: #3c3c3c;
+    --color-ide-border-subtle: #2b2b2b;
+    --color-ide-text: #cccccc;
+    --color-ide-text-muted: #858585;
+    --color-ide-text-dimmed: #5a5a5a;
+    --color-ide-accent: #2979ff;
+    --color-ide-accent-hover: #448aff;
+    --color-ide-hover: #2a2d2e;
+    --color-ide-active: #37373d;
+    --color-ide-selected: #04395e;
+    --color-ide-selected-border: #007fd4;
+    --color-ide-danger: #f44747;
+    --color-ide-positive: #89d185;
+    --color-ide-warning: #e8a838;
+
+    --font-family-sans:
+        "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --font-family-mono:
+        "JetBrains Mono", "Cascadia Code", "Fira Code", "Consolas", monospace;
+    --font-family-nerd: "Maple Mono NF";
+
+    --font-size-2xs: 0.625rem;
+    --font-size-xs: 0.6875rem;
+    --font-size-sm: 0.75rem;
+    --font-size-base: 0.8125rem;
+    --font-size-lg: 0.875rem;
+    --font-size-xl: 1rem;
+    --font-size-2xl: 1.125rem;
+}
+
+:root,
+[data-rs-theme],
+[data-rs-theme][data-rs-color-mode] {
+    --rs-color-background-page: #1e1e1e !important;
+    --rs-color-background-elevation-base: #1e1e1e !important;
+    --rs-color-background-elevation-raised: #252526 !important;
+    --rs-color-background-elevation-overlay: #2d2d2d !important;
+    --rs-color-background-neutral: #2a2d2e !important;
+    --rs-color-background-neutral-faded: #2a2d2e !important;
+    --rs-color-border-neutral: #3c3c3c !important;
+    --rs-color-border-neutral-faded: #2b2b2b !important;
+    --rs-color-foreground-neutral: #cccccc !important;
+    --rs-color-foreground-neutral-faded: #858585 !important;
+    --rs-color-background-disabled: #2d2d2d !important;
+    --rs-color-foreground-disabled: #5a5a5a !important;
+    /* hardcode for now*/
+    --rs-font-family-body:
+        "Inter", "Segoe UI", system-ui, -apple-system, sans-serif !important;
+    --rs-font-family-headline:
+        "Inter", "Segoe UI", system-ui, -apple-system, sans-serif !important;
+    --rs-font-family-title:
+        "Inter", "Segoe UI", system-ui, -apple-system, sans-serif !important;
+    --rs-font-family-monospace:
+        "Maple Mono NF", "Cascadia Code", "Fira Code", "Consolas", monospace !important;
+}
+
+.font-nerd {
+    font-family: var(--font-family-nerd) !important;
+}
+
+@layer base {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 14px;
+        line-height: 1.4;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        font-family: var(--font-family-sans);
+        background-color: var(--color-ide-bg) !important;
+        color: var(--color-ide-text) !important;
+        overflow: hidden;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #424242;
+        border-radius: 4px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #555555;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
