@@ -1,12 +1,11 @@
-import { Button, Container, Reshaped } from "reshaped";
+import { Reshaped } from "reshaped";
 import "reshaped/themes/slate/theme.css";
+import { HomeScreen } from "./views/HomeScreen";
 
 const App = () => {
   return (
-    <Reshaped theme="slate">
-      <Container width="652px">
-        <Button href="/">Get started</Button>
-      </Container>
+    <Reshaped theme="slate" defaultColorMode="dark">
+      <HomeScreen />
     </Reshaped>
   );
 };
